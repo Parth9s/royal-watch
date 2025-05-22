@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Funnel+Display:wght@300..800&display=swap');
+
+
+.quote{
+     font-family: "Ancizar Serif", serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+
+}
+.quote{
+      font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:300;
+  font-style: normal;
+
+}
+
