@@ -8,9 +8,6 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [showBrandsDropdown, setShowBrandsDropdown] = useState(false);
 
-
-
-
   return (
     <nav className="navbar">
       <div className="navbar-top flex w-full px-8 py-4">
@@ -26,7 +23,7 @@ const Navbar = () => {
 
         <ul className="right-links flex">
           <li className="icon">
-            <Link to="/favorites">
+            <Link to="/Wishlist">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                 <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
               </svg>
@@ -51,14 +48,14 @@ const Navbar = () => {
 
       <div className="navbar-bottom flex justify-center w-full">
         <ul className="bottom-links flex">
-          <li><Link to="/brands" className="text-sm tracking-wider font-medium hover:text-black">BRANDS</Link></li>
-          <li><Link to="/prestige-pulse" className="text-sm tracking-wider font-medium hover:text-black">PRESTIGE PULSE</Link></li>
-          <li><Link to="/timeless-tech" className="text-sm tracking-wider font-medium hover:text-black">TIMELESS TECH</Link></li>
-          <li><Link to="/signature-craft" className="text-sm tracking-wider font-medium hover:text-black">SIGNATURE CRAFT</Link></li>
-          <li><Link to="/luxury-vanguard" className="text-sm tracking-wider font-medium hover:text-black">PREMIUM ESSENTIALS</Link></li>
-          <li><Link to="/exclusive-ticks" className="text-sm tracking-wider font-medium hover:text-black">ELITE CLASSICS</Link></li>
-          <li><Link to="/iconic-innovate" className="text-sm tracking-wider font-medium hover:text-black">PRESTIGE ICONS</Link></li>
-          <li><Link to="/premier-editions" className="text-sm tracking-wider font-medium hover:text-black">MASTERPIECES</Link></li>
+          <li><Link to="/collections" className="text-sm tracking-wider font-medium hover:text-black">COLLECTIONS</Link></li>
+          <li><Link to="/category/prestigePulse" className="text-sm tracking-wider font-medium hover:text-black">PRESTIGE PULSE</Link></li>
+          <li><Link to="/category/timelessTech" className="text-sm tracking-wider font-medium hover:text-black">TIMELESS TECH</Link></li>
+          <li><Link to="/category/signatureCraft" className="text-sm tracking-wider font-medium hover:text-black">SIGNATURE CRAFT</Link></li>
+          <li><Link to="/category/premiumEssentials" className="text-sm tracking-wider font-medium hover:text-black">PREMIUM ESSENTIALS</Link></li>
+          <li><Link to="/category/eliteClassics" className="text-sm tracking-wider font-medium hover:text-black">ELITE CLASSICS</Link></li>
+          <li><Link to="/category/prestigeIcons" className="text-sm tracking-wider font-medium hover:text-black">PRESTIGE ICONS</Link></li>
+          <li><Link to="/category/masterpieces" className="text-sm tracking-wider font-medium hover:text-black">MASTERPIECES</Link></li>
           <li className="search-icon">
             <Link to="/search">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
