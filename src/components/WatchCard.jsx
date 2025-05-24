@@ -75,7 +75,14 @@ const WatchCard = ({ watch, isWishlisted, onWishlistToggle }) => {
       <div className="flex flex-col items-center w-full mt-4 p-4">
         <span className="font-bold text-base tracking-wide text-black mb-1">{watch.brand}</span>
         <span className="uppercase text-sm text-black mb-2" style={{ letterSpacing: '2px' }}>{watch.model}</span>
-        <span className="font-bold text-lg text-black mb-4">₹ {watch.price.toLocaleString('en-IN')}</span>
+        <span className="font-bold text-lg text-black mb-2">₹ {watch.price.toLocaleString('en-IN')}</span>
+        {watch.stock === 0 ? (
+          <span className="text-sm font-medium text-red-500 mb-2">Out of Stock</span>
+        ) : watch.stock > 0 && watch.stock <= 5 ? (
+          <span className="text-sm font-medium text-orange-500 mb-2">Low Stock ({watch.stock} left)</span>
+        ) : (
+          <span className="text-sm font-medium text-green-500 mb-2">In Stock</span>
+        )}
         <span className="text-base  text-[#8B2C1F] mt-2" style={{ letterSpacing: '1px' }}>
           CHECK OUR SELLING PRICE
         </span>
