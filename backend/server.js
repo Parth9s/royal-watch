@@ -21,8 +21,10 @@ mongoose.connect('mongodb://localhost:27017/byteMeWatches', {
 
 app.get('/api/watches', async (req, res) => {
   const { category } = req.query;
+  console.log('Backend received category query:', category);
   const query = category ? { category } : {};
   const watches = await Watch.find(query);
+  console.log('Backend found watches:', watches.length);
   res.json(watches);
 });
 

@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { categoryDescriptions } from '../data/WatchData';
+
+
 
 const BrandsPage = () => {
   const categories = [
-    { id: 'prestigePulse', name: 'PRESTIGE PULSE' },
-    { id: 'timelessTech', name: 'TIMELESS TECH' },
-    { id: 'signatureCraft', name: 'SIGNATURE CRAFT' },
-    { id: 'premiumEssentials', name: 'PREMIUM ESSENTIALS' },
-    { id: 'eliteClassics', name: 'ELITE CLASSICS' },
-    { id: 'prestigeIcons', name: 'PRESTIGE ICONS' },
-    { id: 'masterpieces', name: 'MASTERPIECES' }
+    { id: 'prestigePulse', name: 'PRESTIGE PULSE', description: 'Luxury watches with cutting-edge technology.' },
+    { id: 'timelessTech', name: 'TIMELESS TECH', description: 'Innovate watches with advanced features.' },
+    { id: 'signatureCraft', name: 'SIGNATURE CRAFT', description: 'Handcrafted watches with unique designs.' },
+    { id: 'premiumEssentials', name: 'PREMIUM ESSENTIALS', description: 'Essential watches for everyday wear.' },
+    { id: 'eliteClassics', name: 'ELITE CLASSICS', description: 'Classic watches with timeless appeal.' },
+    { id: 'prestigeIcons', name: 'PRESTIGE ICONS', description: 'Iconic watches from renowned brands.' },
+    { id: 'masterpieces', name: 'MASTERPIECES', description: 'Exceptional watches that are true works of art.' }
   ];
 
   return (
@@ -33,7 +34,7 @@ const BrandsPage = () => {
                     {category.name}
                   </h2>
                   <p className="text-gray-600 mb-4">
-                    {categoryDescriptions[category.id].split('.')[0]}.
+                    {category.description}
                   </p>
                   <button className="text-gray-800 font-medium hover:text-gray-600 transition-colors">
                     View Collection →
